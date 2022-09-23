@@ -26,14 +26,15 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```javascript
 import { CircleAccess } from 'circle-access'
 
-CircleAccess.configure({
-  appKey: APPLICATION_APPKEY,
-  readKey: APPLICATION_READKEY,
-  writeKey: APPLICATION_WRITEKEY,
-})
+const ca = new CircleAccess(
+  'app9KrRWQS9DjtpzNgWcbHNt68S7Y1DfUJJV',
+  'readFk4HtTqLNcTZYZzmHUNfT3jjt1EwqYRu3',
+  'writeNRZpXhseVhV3pk1mrw7rxvEJLa4AXwzzH')
+
 try {
-  let data = await CircleAccess.create2FA(customID, returnUrl, webhookUrl, phone, email, question, userID, mobileReturnUrl)
-  console.log('API called successfully. Returned data: ' + data);
+  const session = await ca.getSession("session2YHiFKTTAwuvfL7kWMKRzzeVjNxMiwEbC");
+  console.log('API called successfully. Returned data: ');
+  console.log(session);
 } catch (error) {
   console.error(error);
 }
@@ -41,11 +42,7 @@ try {
 
 ## Documentation
 
-* CircleAccess.configure(config)
-* CircleAccess.create2FA(customID, returnUrl, webhookUrl, phone, email, question, userID, mobileReturnUrl)
-* CircleAccess.getSession(sessionID)
-* CircleAccess.getUserSession(sessionID, userID)
-* CircleAccess.expireUserSession(sessionID, userID)
+Check the test folder to see ALL calls that are available
 
 ## Distribuition
 

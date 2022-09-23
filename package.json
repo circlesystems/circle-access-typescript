@@ -1,6 +1,6 @@
 {
   "name": "circle-access",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -48,7 +48,10 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "node-fetch": "^2.6.7"
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "node-fetch": "^2.6.7",
+    "stream-browserify": "^3.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
