@@ -39,9 +39,9 @@ test('getUserSession', async () => {
 })
 
 test('createAuthorization', async () => {
-  const authorization = await ca2FA.createAuthorization('123', 'http://localhost:8000/callback', 'Is curcio@gocircle.ai your email', [
+  const authorization = await ca2FA.createAuthorization('123', 'http://localhost:8000/callback', 'Is curcio@circlesecurity.ai your email', [
     {
-      'email': 'curcio@gocircle.ai',
+      'email': 'curcio@circlesecurity.ai',
       'weight': 100,
       'required': false
     },
@@ -59,7 +59,7 @@ test('getAuthorization', async () => {
 })
 
 test('create2FA', async () => {
-  const authorization = await ca2FA.create2FA('1234', 'http://localhost:8000/callback', 'Is curcio@gocircle.ai your email', '', 'curcio@gocircle.ai', '', '', '')
+  const authorization = await ca2FA.create2FA('1234', 'http://localhost:8000/callback', 'Is curcio@circlesecurity.ai your email', '', 'curcio@circlesecurity.ai', '', '', '')
   console.log(authorization)
   expect(authorization.data.customID).toBe('1234')
 })
