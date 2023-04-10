@@ -304,7 +304,7 @@ export class HttpClient<SecurityDataType = unknown> {
   constructor({ securityWorker, secure, format, ...axiosConfig }: ApiConfig<SecurityDataType> = {}) {
     this.instance = axios.create({
       ...axiosConfig,
-      baseURL: axiosConfig.baseURL || "https://circleauth.gocircle.ai/api",
+      baseURL: axiosConfig.baseURL || "https://circleaccess.circlesecurity.ai/api",
     });
     this.secure = secure;
     this.format = format;

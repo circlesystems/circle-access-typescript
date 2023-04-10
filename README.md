@@ -1,13 +1,13 @@
 # Circle Access
 
-Circle Access - Node.js typescript client for [Circle Access API](https://circleauth.gocircle.ai/docs/)
+Circle Access - Node.js typescript client for [Circle Access API](https://circleaccess.circlesecurity.ai/docs/)
 <br>
 
 Circle Access allows you to quickly implement userless/passwordless login and 2FA (no more paying for SMS to have 2FA)
 
 ## Installation
 
-First make sure to get your credentials on [Circle Access Console](https://console.gocircle.ai/), if you want to test first, use [Circle Access- Demo](https://circleauth.gocircle.ai/demo)
+First make sure to get your credentials on [Circle Access Console](https://console.circlesecurity.ai/), if you want to test first, use [Circle Access- Demo](https://circleaccess.circlesecurity.ai/demo)
 
 ### For [Node.js](https://nodejs.org/)
 
